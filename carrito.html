@@ -102,9 +102,17 @@
       var total = carrito.reduce(function(total, item) {
         return total + item.precio;
       }, 0);
-
+     //Funcion para mostrar el total de la venta
       var totalCarrito = document.getElementById('totalCarrito');
       totalCarrito.textContent = 'Total de la venta es: $' + total;
+      document.getElementById('botonLimpiarCarrito').addEventListener('click', function() {
+      document.getElementById('listaCarrito').innerHTML = '';
+      document.getElementById('totalCarrito').innerHTML = '';
+});  
+
+     document.getElementById('botonFinalizarCompra').addEventListener('click', function() {
+      window.location.href = 'finalizar_compra.html';
+});
 }
     </script>
 </head>
@@ -173,10 +181,11 @@
             </div>
         </div>
 
-
         <div class="center-content">
             <ul id="listaCarrito"></ul>
             <p id="totalCarrito"></p>
+            <button id="botonLimpiarCarrito">Limpiar Carrito</button>
+            <button id="botonFinalizarCompra">Finalizar Compra</button>
         </div>
     </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js"></script>
