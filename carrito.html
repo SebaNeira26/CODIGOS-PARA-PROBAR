@@ -8,12 +8,13 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <title>Página de Ventas</title>
     <style>
-      body {
-    background-color: #000;
-    color: #fff; /* Esto cambiará el color del texto a blanco para que sea visible en el fondo negro */
-}
+        body {
+            height: 60vh !important;
+            background: url(/imagenes/diseñopagweb1.jpg) no-repeat;
+            background-size: cover; 
+        }
         .Navbar {
-            background-color: #333;
+            background-color: #faf6f6;
             overflow: hidden;
         }
         .Navbar a {
@@ -25,7 +26,7 @@
             text-decoration: none;
         }
         .logo {
-            background-color: #333;
+            background-color: #fcfcfc;
             padding: 15px;
             text-align: center;
         }
@@ -35,7 +36,7 @@
         }
         .btn {
             display: inline-block;
-            background-color: #007bff;
+            background-color: #ffffff;
             color: white;
             padding: 10px 20px;
             text-decoration: none;
@@ -118,11 +119,11 @@
 </head>
 <body>
     <section class="content sau">
-        <h2 class="tittle">Productos</h2>
+        <h2 class="tittle" style="color: #ffffff;">Productos</h2>
         <div class="box-container">
             <div class="product">
-                <h3>Audifonos</h3>
-                <p>AF=AudiFonos</p>
+                <h3 style="color: #ffffff;">Audifonos</h3>
+                <p style="color: #ffffff;">AF=AudiFonos</p>
                 <img src="imagenes/audifono1.jpg" class="d-block w-25" alt="...">
                 <button onclick="agregarCarrito('AF1', 30000)">Añadir AF1 al carrito</button>
                 <img src="imagenes/audifono2.jpg" class="d-block w-25" alt="...">
@@ -132,8 +133,8 @@
             </div>
 
             <div class="product">
-                <h3>Teclado</h3>
-                <p>TL=TecLado</p>
+                <h3 style="color: #ffffff;">Teclado</h3>
+                <p style="color: #ffffff;">TL=TecLado</p>
                 <img src="imagenes/teclado1.jpg" class="d-block w-25" alt="...">
                 <button onclick="agregarCarrito('TL1', 50000)">Añadir TL1 al carrito</button>
                 <img src="imagenes/teclado2.jpg" class="d-block w-25" alt="...">
@@ -143,8 +144,8 @@
 
             </div>
             <div class="product">
-                <h3>Mouse</h3>
-                <p>MS=MouSe</p>
+                <h3 style="color: #ffffff;">Mouse</h3>
+                <p style="color: #ffffff;">MS=MouSe</p>
                 <img src="imagenes/mouse1.jpg" class="d-block w-25" alt="...">
                 <button onclick="agregarCarrito('MS1', 40000)">Añadir MS1 al carrito</button>
                 <img src="imagenes/mouse2.jpg" class="d-block w-25" alt="...">
@@ -154,8 +155,8 @@
 
             </div>
             <div class="product">
-                <h3>Mousepad</h3>
-                <p>MP=MousePad</p>
+                <h3 style="color: #ffffff;">Mousepad</h3>
+                <p style="color: #ffffff;">MP=MousePad</p>
                 <img src="imagenes/mousepad1.jpg" class="d-block w-50" alt="...">
                 <button onclick="agregarCarrito('MP1', 10000)">Añadir MP1 al carrito</button>
                 <img src="imagenes/mousepad2.jpg" class="d-block w-50" alt="...">
@@ -165,8 +166,8 @@
 
             </div>
             <div class="product">
-                <h3>Monitor</h3>
-                <p>MT=MoniTor</p>
+                <h3 style="color: #ffffff;">Monitor</h3>
+                <p style="color: #ffffff;">MT=MoniTor</p>
                 <img src="imagenes/monitor1.jpg" class="d-block w-25" alt="...">
                 <button onclick="agregarCarrito('MT1', 100000)">Añadir MT1 al carrito</button>
                 <img src="imagenes/monitor2.jpg" class="d-block w-25" alt="...">
@@ -177,8 +178,8 @@
             </div>
         </div>
         <div class="center-content">
-            <ul id="listaCarrito"></ul>
-            <p id="totalCarrito"></p>
+            <ul style="color: #ffffff;" id="listaCarrito"></ul>
+            <p style="color: #ffffff;" id="totalCarrito"></p>
             <button id="botonLimpiarCarrito">Limpiar Carrito</button>
             <button id="botonFinalizarCompra">Finalizar Compra</button>
         </div>
